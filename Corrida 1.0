@@ -5,7 +5,7 @@ function setup() {
 let xJogador = [0, 0, 0, 0];
 let yJogador = [75, 150, 225, 300];
 let jogador = ["😜", "🤷‍♂️", "😎", "😁"];
-let teclas = ["t", "g", "m", "i"];
+let teclas = ["t", "g", "m", "i"];  // TECLAS PARA MOVER OS PERSONAGENS
 let quantidade = jogador.length;
 
 function draw() {
@@ -18,7 +18,7 @@ function draw() {
 
 function ativaJogo() {
   if (focused == true) {
-    background("green");
+    background("green"); // DEIXA O FUNDO VERDE QUANDO CLICADO
   } else {
     background("red");
   }
@@ -32,9 +32,9 @@ function desenhaJogadores() {
 }
 
 function desenhaLinhaDeChegada() {
-  fill("white");
+  fill("white"); // AS PARTES BRANCAS DA LINHA DE CHEGADA
   rect(350, 0, 10, 400);
-  fill("black");
+  fill("black"); // AS PARTES PRETAS DA LINHA DE CHEGADA
   for (let yAtual = 0; yAtual < 400; yAtual += 20) {
     rect(350, yAtual, 10, 10);
   }
